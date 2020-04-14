@@ -15,3 +15,5 @@
 | submission_0411 | ? | 0.87432 | **CatBoost** dropping first 1000 days data with features same as submission_0410 <br/> CatBoost params: <br/> iterations: 2000, learning_rate: 0.08, early_stopping_rounds: 400, <br/> depth: 7, random_strength: 0.5, l2_leaf_reg: 0.1, <br/> loss_function: 'RMSE', eval_metric: 'RMSE' |
 ||
 | submission_0411_2 | 0.56??? | 0.67517 | CatBoost, change params: **one_hot_max_size: 128, has_time: True**
+||
+| submission_0414 | 0.58183 | 0.67710 | CatBoost, adding features: <br/> **is_weekend, is_month_start, is_month_end, demand_lag_365, demand_lag_365_roll_mean** <br/> change definition of **price_pct_change, price_roll_std_7** <br/> dropping features: **demand_lag_42, demand_lag_49**,  <br/> change params setting: **border_count = 255, feature_border_type = 'Uniform'**
